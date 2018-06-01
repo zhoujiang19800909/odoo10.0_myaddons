@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!--<record model="weixin2.user" id="course01">-->
+             <!--<field name="name">语文</field>-->
+             <!--<field name="description">语文</field>-->
+        <!--</record>-->
+        <!--<record model="weixin2.user" id="course02">-->
+             <!--<field name="name">数学</field>-->
+             <!--<field name="description">数学</field>-->
+        <!--</record>-->
+        <!--<record model="weixin2.user" id="course03">-->
+             <!--<field name="name">英语</field>-->
+             <!--<field name="description">英语</field>-->
+        <!--</record>-->
+    </data>
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- 产品列表画面：添加预定数量、预定起止日期   -->
+        <record id="twosidetime_template_tree_view" model="ir.ui.view">
+            <field name="name">twosidetime.template.tree.view</field>
+            <field name="model">product.template</field>
+            <!-- inherit_id要写xxx.xxx，如果没有前面的默认会被认为是本模块的 -->
+            <field name="inherit_id" ref="product.product_template_tree_view"/>
+            <field name="arch" type="xml">
+                <field name="type" position="after">
+                    <field name="order_max_number" />
+                    <field name="order_date_start" />
+                    <field name="order_date_end" />
+                </field>
+            </field>
+        </record>
+
+        <!-- 产品新增编辑画面： 添加预定数量、预定起止日期-->
+        <record id="tweosidetime_template_form_view" model="ir.ui.view">
+            <field name="name">twosidetime.template.form.view</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <field name="type" position="after">
+                    <field name="order_max_number"/>
+                    <field name="order_date_start"/>
+                    <field name="order_date_end"/>
+                </field>
+
+
+            </field>
+        </record>
+
+        <!--<record model="ir.actions.act_window" id="food_list_action">-->
+            <!--<field name="name">food</field>-->
+            <!--<field name="res_model">product.template</field>-->
+            <!--<field name="view_mode">tree</field>-->
+        <!--</record>-->
+        <!--<menuitem id="food_menu" name="Food"-->
+                  <!--parent="configuration_menu"-->
+                  <!--action="food_list_action"/>-->
+    </data>
+</odoo>
